@@ -3,22 +3,22 @@
     <h1> Give us Your Precription!</h1>
     <div class="form-group">
       <label >Right Eye</label>
-      <input  [(ngModel)] = "prescription.rightEyePrescription" class="form-control" aria-describedby="emailHelp">
+      <input  [(ngModel)] = "prescription.rightEyePrescription" [ngModelOptions]="{standalone: true}" class="form-control" aria-describedby="emailHelp">
       <small id="emailHelp" class="form-text text-muted">Enter your right eye prescription.</small>
     </div>
     <div class="form-group">
         <label >Left Eye</label>
-        <input  [(ngModel)] = "prescription.leftEyePrescription"class="form-control"  aria-describedby="emailHelp">
+        <input  [(ngModel)] = "prescription.leftEyePrescription" [ngModelOptions]="{standalone: true}" class="form-control"  aria-describedby="emailHelp">
         <small id="emailHelp" class="form-text text-muted">Enter your right eye prescription.</small>
     </div>
     <div class="form-group">
         <label >Right Eye cylinder</label>
-        <input [(ngModel)] = "prescription.rightEyeCylinder" class="form-control"  aria-describedby="emailHelp">
+        <input [(ngModel)] = "prescription.rightEyeCylinder" [ngModelOptions]="{standalone: true}" class="form-control"  aria-describedby="emailHelp">
         <small id="emailHelp" class="form-text text-muted">Enter your right eye cylinder.</small>
     </div>
     <div class="form-group">
         <label >Left Eye cylinder</label>
-        <input  [(ngModel)] = "prescription.leftEyeCylinder"class="form-control"  aria-describedby="emailHelp">
+        <input  [(ngModel)] = "prescription.leftEyeCylinder" [ngModelOptions]="{standalone: true}" class="form-control"  aria-describedby="emailHelp">
         <small id="emailHelp" class="form-text text-muted">Enter your left eye cylinder.</small>
     </div>
    

@@ -7,11 +7,11 @@ import { OrderService } from 'src/app/services/order.service';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-  prescription: {
-  rightEyePrescription: number; 
-  leftEyePrescription: number;
-  rightEyeCylinder: number;
-  leftEyeCylinder: number;
+  prescription =  {
+  rightEyePrescription: null,
+  leftEyePrescription: null,
+  rightEyeCylinder: null,
+  leftEyeCylinder: null,
   }
   constructor(private orderService: OrderService) { }
 
@@ -19,6 +19,6 @@ export class FormComponent implements OnInit {
   }
 sendForm(p: any){
   this.orderService.addPrescription(p);
-console.log(this.orderService.prescription)
+console.log(this.prescription)
 }
 }
