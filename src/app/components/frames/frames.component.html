@@ -1,0 +1,10 @@
+<div class="card border-success mb-3" style="max-width: 18rem;">
+        <div class="card-header bg-transparent border-success">{{frame.name}}</div>
+        <div class="card-body text-success">
+          <img [src] = "frame.picture" class = "card-text" style = "width: 100px">
+          <p class="card-text">{{frame.description}}</p>
+        </div>
+        <div class="card-footer bg-transparent border-success">
+                <button (click) = "addToOrder(frame.name)" type="button" class="btn btn-primary" routerLink = "/lenses" >Select</button>
+        </div>
+      </div>
